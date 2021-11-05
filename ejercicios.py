@@ -1,7 +1,6 @@
 import re
 import string
 opcion = 0
-result = string.punctuation
 while opcion!=6:
   print("1.Variables válidas. Ejemplo: suma, i, cont7, etc.\n2.Enteros y decimales. 2.7, 3.1416, 0.2, etc.\n3.Expresiones aritméticas (suma, resta, multiplicación, división, etc.). Ejemplo: suma = 2 + 1, cont = cont + 1, etc\n4.Operadores condicionales (mayor, menor, igual, diferente, etc.) Ejemplo: edad >= 18, cont < 100, etc.\n5.Cadenas de caracteres")
   opcion=int(input("ingrese una opcion "))
@@ -47,6 +46,8 @@ while opcion!=6:
       textfile.close()
 # Cadenas de caracteres
   elif opcion==5:
+      # este lo use para poner todos los signos de puntuacion
+      result = string.punctuation
       filename = "hola.txt"
       textfile = open(filename, "r")
       regex = "\"[\w"+result+"\s]+"
