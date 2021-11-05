@@ -6,7 +6,7 @@ while opcion!=6:
   opcion=int(input("ingrese una opcion "))
   # Variables válidas. Ejemplo: suma, i, cont7, etc.
   if opcion==1:
-    filename= "hola.txt"
+    filename= "Ejemplos prueba.txt"
     textfile=open(filename,"r")
     regex ="[^\'\"\d][a-zA-Z_][a-zA-Z_0-9]*[^\'\"]"
     reg = re.compile(regex)
@@ -16,7 +16,7 @@ while opcion!=6:
     textfile.close()
 # Enteros y decimales. 2.7, 3.1416, 0.2, etc.
   elif opcion==2:
-      filename = "hola.txt"
+      filename = "Ejemplos prueba.txt"
       textfile = open(filename, "r")
       regex = "\d+\.?\d*"
       reg = re.compile(regex)
@@ -26,7 +26,7 @@ while opcion!=6:
       textfile.close()
 # Expresiones aritméticas (suma, resta, multiplicación, división, etc.). Ejemplo: suma = 2 + 1, cont = cont + 1, etc
   elif opcion==3:
-      filename = "hola.txt"
+      filename = "Ejemplos prueba.txt"
       textfile = open(filename, "r")
       regex = "([A-za-z]\w*|\d\.?\d*)\s?(\+|\-|\*|\/)\s?([A-za-z]\w*|\d\.?\d*)"
       reg = re.compile(regex)
@@ -36,7 +36,7 @@ while opcion!=6:
       textfile.close()
 # Operadores condicionales (mayor, menor, igual, diferente, etc.) Ejemplo: edad >= 18, cont < 100, etc.
   elif opcion==4:
-      filename = "hola.txt"
+      filename = "Ejemplos prueba.txt"
       textfile = open(filename, "r")
       regex = "([A-za-z]\w*|\d\.?\d*)\s?(\>|\<|\>=|\<=|=|!=|\=\=)\s?([A-za-z]\w*|\d\.?\d*)"
       reg = re.compile(regex)
@@ -48,7 +48,7 @@ while opcion!=6:
   elif opcion==5:
       # este lo use para poner todos los signos de puntuacion
       result = string.punctuation
-      filename = "hola.txt"
+      filename = "Ejemplos prueba.txt"
       textfile = open(filename, "r")
       regex = "\"[\w"+result+"\s]+"
       reg = re.compile(regex)
