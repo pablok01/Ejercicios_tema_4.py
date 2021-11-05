@@ -1,0 +1,27 @@
+#ejemplos de ejercicios
+#variables
+suma =1
+resta =2
+print(suma+resta)
+#enteros y decimales
+multiplicacion=2*2
+division=10/2
+suma= 2.33+5.323
+print(suma)
+#expresiones aritmeticas
+multiplicacion=2*2
+division=10/2
+suma= 2.33+5.323
+print(suma)
+#operadores condicionales
+if suma<=resta:
+    print("es menor o igual")
+elif suma >=resta:
+    print("es mayor o igual")
+
+if suma!= resta:
+    print("es diferente")
+
+#cadenas de caracteres
+print("hola soy una cadena de caracteres")
+print("Pedro Pablo Kinil Chi 5B")
