@@ -58,5 +58,3 @@ while opcion!=6:
       textfile.close()
   else:
     print("\la opcion es incorrecta")
-
-print('hola')
